@@ -1,17 +1,5 @@
-use yew::prelude::*;
+use RustYewWebSystem::App;
 
-#[function_component]
-fn App() -> Html {
-    
-  
-
-    html! {
-        <div>
-            
-            <h1>{"Hello World"}</h1>
-        </div>
-    }
-}
 
 
 
