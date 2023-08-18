@@ -639,7 +639,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('RustYewWebSystem-423864d460242215_bg.wasm', import.meta.url);
+        input = new URL('RustYewWebSystem-5e304f4b44d438b1_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
