@@ -18,11 +18,25 @@ pub fn App() -> Html {
   //console functionality
    log!("My name is ",name);
    log!(serde_json::to_string_pretty(&my_object).unwrap());
+   let mut class: &str = "My_title";
+   let mut message: Option<&str> = None;
+
     html! {
         <>
           <div>
             
-            <h1>{"Hello World"}</h1>
+            <h1 class = {class}>{"Hello World"}</h1>
+            if class == "My_titles" {
+                <p>{"hi there"}</p>
+            } else {
+                <p>{"I'm not a titles"}</p>
+            }
+
+            if let Some(message) = message {
+                <p>{message}</p>
+            } else {
+                <p>{"No message here bro!!"}</p>
+            }
         </div>
         
         </>
